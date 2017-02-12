@@ -16,6 +16,6 @@ http://www.mulesoft.org/schema/mule/mock http://www.mulesoft.org/schema/mule/moc
             <mock:then-return payload="#['109']"/>
         </mock:when>
         <flow-ref name="munit-demoFlow" doc:name="munit-demoFlow"/>
-        <munit:assert-on-equals message="oops! wrong message" expectedValue="#['[{&quot;loan_id&quot;:&quot;107&quot;,&quot;loan_type&quot;:&quot;creditcard&quot;,&quot;loan_amount&quot;:&quot;8066.30&quot;,&quot;monthly_payment&quot;:&quot;952.37&quot;,&quot;customer_id&quot;:9,&quot;interest_rate&quot;:2.48}]']" actualValue="#[payload]" doc:name="Assert Equals"/>
+        <munit:assert-on-equals message="oops! wrong message" expectedValue="#['[{&quot;loan_id&quot;:&quot;109&quot;,&quot;loan_type&quot;:&quot;creditcard&quot;,&quot;loan_amount&quot;:&quot;8066.30&quot;,&quot;monthly_payment&quot;:&quot;952.37&quot;,&quot;customer_id&quot;:9,&quot;interest_rate&quot;:2.48}]']" actualValue="#[payload]" doc:name="Assert Equals"/>
     </munit:test>
 </mule>
