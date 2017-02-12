@@ -26,6 +26,7 @@
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				    <muleHome>/Users/marreddyyeruva/Downloads/mmc-distribution-mule-console-bundle-3.7.0/mule-enterprise-3.7.0</muleHome>
                     <copyToAppsDirectory>true</copyToAppsDirectory>
 				</configuration>
 			</plugin>
