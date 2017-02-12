@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
     <flow name="munit-demoFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/munit" doc:name="HTTP"/>
         <set-payload value="#[message.inboundProperties.'http.query.params'.id]" doc:name="Set Payload"/>
-        <db:select config-ref="MySQL_Configuration" doc:name="Database">
+        <db:select config-ref="MySQL_Configuration" doc:name="Make Database Call">
             <db:parameterized-query><![CDATA[select * from mulesoft.loan where loan_id = #[payload]]]></db:parameterized-query>
         </db:select>
         <json:object-to-json-transformer mimeType="application/json" doc:name="Object to JSON"/>
