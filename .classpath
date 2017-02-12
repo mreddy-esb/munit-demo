@@ -1,5 +1,5 @@
 <classpath>
-  <classpathentry kind="src" path="src/main/app" excluding="**/*.java"/>
+  <classpathentry kind="src" path="src/main/app"/>
   <classpathentry kind="src" path="src/main/java"/>
   <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
   <classpathentry kind="src" path="src/test/java" output="target/test-classes"/>

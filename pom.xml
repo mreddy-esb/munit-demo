@@ -31,6 +31,15 @@
 				</configuration>
 			</plugin>
 			<plugin>
+                <groupId>org.mule.tools</groupId>
+                <artifactId>maven-mule-plugin</artifactId>
+                <version>${mule.tools.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                <copyToAppsDirectory>true</copyToAppsDirectory>
+                </configuration>
+            </plugin>
+			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
 				<version>1.7</version>
